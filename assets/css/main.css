@@ -570,7 +570,7 @@ h6 {
 }
 
 .footer .social-links a {
-  display: flex;
+  display: -webkit-inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -1023,6 +1023,8 @@ section,
   font-weight: 600;
 }
 
+
+
 /*--------------------------------------------------------------
 # About Alt Section
 --------------------------------------------------------------*/
@@ -1039,6 +1041,12 @@ section,
 .about-alt .content ul li {
   padding: 10px 0 0 0;
   display: flex;
+  align-items: center;
+}
+
+.about-alt .content ul li span{
+  display: flex;
+  align-items: center;
 }
 
 .about-alt .content ul i {
@@ -1725,6 +1733,18 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact .row {
+  flex-wrap: wrap; /* Ensures items wrap to the next line on smaller screens */
+}
+
+.contact .info-item {
+  display: flex;
+  align-items: center; /* Vertically aligns the icon and text */
+  text-align: center; /* Centers the text within each info item */
+  max-width: 500px; /* Optional: Controls the maximum width of each info-item */
+  flex-direction: column !important; /* Ensures the icon is above the text on smaller screens */
+}
+
 .contact .info-item+.info-item {
   margin-top: 40px;
 }
@@ -1736,11 +1756,14 @@ section,
   width: 44px;
   height: 44px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
+  margin-bottom: 10px; /* Adds space between the icon and the text */
 }
 
 .contact .info-item h3 {
@@ -2047,10 +2070,43 @@ section,
 
 .hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  /* top: 0;
+  left: 0; */
+  /* min-width: 100%;
+  min-height: 100%; */
   z-index: 0;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  object-position: center center; /* Centers the video content */
+}
+
+.footer-logo {
+  width: 400px;  /* Set the width of the logo */
+  height: 80px; /* Set the height of the logo */
+  vertical-align: middle; /* Align the logo vertically with the text */
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0;
+  }
+
+  /* .hero-video {
+    object-position: center; 
+    transform: translate(-40%, -10%); 
+    height: calc(20vh - 100px); 
+    min-height: 90% !important;
+  } */
+
+  .hero-video {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100%; 
+    min-height: 50% !important;
+    height: calc(50vh - 100px); 
+    height: calc(100vh - 100px);
+    object-fit: cover; 
+    object-position: center center; 
+    transform: translate(-50%, -50%); 
+  }
 }
