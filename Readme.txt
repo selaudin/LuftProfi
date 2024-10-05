@@ -1,6 +1,6 @@
 # LuftProfi - Static Website
 
-![LuftProfi Front](./assets/img/front.jpg)
+<img src="./assets/img/front.jpg" alt="LuftProfi LandingPage" width="600">
 
 **LuftProfi** is a modern static website designed to showcase services related to air quality and HVAC solutions.
 
