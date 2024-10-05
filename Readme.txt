@@ -1,6 +1,11 @@
-Thanks for downloading this template!
+# LuftProfi - Static Website
 
-Template Name: OnePage
-Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+![LuftProfi Front](./assets/img/front.jpg)
+
+**LuftProfi** is a modern static website designed to showcase services related to air quality and HVAC solutions.
+
+## Features
+- Responsive design
+- Easy navigation
+- Clean and modern layout
+- Optimized for fast loading
