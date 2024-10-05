@@ -1,4 +1,4 @@
-# LuftProfi - Static Website
+# LuftProfi - FrontEnd Website
 
 <img src="./assets/img/front.jpg" alt="LuftProfi LandingPage" width="600">
 
