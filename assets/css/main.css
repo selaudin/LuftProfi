@@ -2187,3 +2187,7 @@ section,
 .margintop20 {
   margin-top: 20px;
 }
+
+.fill-item {
+  max-width: -webkit-fill-available;
+}

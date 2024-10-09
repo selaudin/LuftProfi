@@ -2,7 +2,7 @@
 
 <img src="./assets/img/front.jpg" alt="LuftProfi LandingPage" width="600">
 
-**LuftProfi** is a modern static website designed to showcase services related to air quality and HVAC solutions.
+**LuftProfi** is a modern one page website designed to showcase services related to air quality and HVAC solutions.
 
 ## Features
 - Responsive design
