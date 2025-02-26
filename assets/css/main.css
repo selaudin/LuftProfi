@@ -897,10 +897,11 @@ section,
 }
 
 .hero h1 {
+  padding: 60px 0 0 0;
   margin: 0;
   font-size: 56px;
-  font-weight: 700;
-  line-height: 72px;
+  font-weight: 800;
+  line-height: 62px;
 }
 
 .hero p {
@@ -911,6 +912,7 @@ section,
 
 @media (max-width: 992px) {
   .hero h1 {
+    padding: 40px 0 0 0;
     font-size: 28px;
     line-height: 36px;
   }
@@ -2141,13 +2143,13 @@ section,
   } */
 
   .hero-video {
-    position: absolute;
+    position: absolute !important;
     top: 50% !important;
     left: 50% !important;
     width: 100%; 
     min-height: 50% !important;
-    height: calc(50vh - 100px); 
-    height: calc(100vh - 100px);
+    /* height: calc(50vh - 100px) !important;  */
+    height: calc(100vh - 100px) !important;
     object-fit: cover; 
     object-position: center center; 
     transform: translate(-50%, -50%); 
